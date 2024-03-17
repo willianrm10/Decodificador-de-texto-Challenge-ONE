@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="fav icon" href="img/favi.png">
+    <script src = "scripts/script.js" defer></script>
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__titulo">
+            <a href="index.html"><img src="img/logo.png" alt="ícone da pagina" class="header__img"></a>
+        </h1>
+        <!-- para mostrar os avisos precisa adicionar a classe mostrar -->
+        <p class="header__notificacoes" id="notificacoes"></p>
+    </header>
+
+    <main>
+        <div class="conteudo-esquerda">
+            <textarea class="texto" required="" placeholder="Digite seu texto" spellcheck="false"></textarea>
+            <div class = "conteudo-esquerda-final">
+                <div class="conteudo-esquerda-regras">
+                    <img src="img/info.png" alt="">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="conteudo-esquerda-botoes">
+                    <button class = criptografar>Criptografar</button>
+                    <button class = descriptografar>Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class = "conteudo-direita">
+            <p class = "texto-criptografado"></p>
+            <div class = "conteudo-direita-itens">
+                <img src="img/menina-azul.png" alt="">
+                <div id="resposta-texto" class="conteudo-direita-mensagem">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>      
+            </div>
+            <button class = "conteudo-direita-copiar">Copiar</button>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <section class="secao-base">
+        <div>
+            <strong class="strong">Rede Social</strong>
+        </div>
+        <div class="rede-social">
+            <a href="https://github.com/" target="_blank"><img src="img/github.png" alt="GitHub" class="rede-social__img"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt="linkeDin" class="rede-social__img__linkedin"></a>
+        </div>
+
+    </section> 
+        <section class="secao-rodape"> Desenvolvido por Willian Moraes - 2024</section>
+    </footer>
+
+</body>
+</html>
